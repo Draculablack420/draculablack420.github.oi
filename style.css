@@ -1,1 +1,21 @@
+h1 {
+    color: rgb(59, 219, 203);
+    font-size: 100px;
+    text-align: all 
+}
 
+h2 {
+    color: rgb(59, 219, 203);
+}
+
+p {
+    color: rgb(59, 219, 203);
+}
+
+a {
+    color: rgb(59, 219, 203);
+    text-decoration: none;
+}
+.cargo {
+    color: #666;
+    font-weight: bold;
