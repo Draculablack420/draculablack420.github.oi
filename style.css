@@ -42,10 +42,9 @@ a {
    ======================================== */
 
 #hero {
-    /*Aula 5*/
-    /*padding: 30px;
+    padding: 30px;
     margin: 20px;
-    border: 2px solid black;*/
+    border: 2px solid black;
     background-color: #e8f4f8;
 }
 
@@ -90,16 +89,16 @@ footer p {
 /* Aula 5 */
 body{
     font-family: Arial, sans-serif;
-    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Aula 6 */
 header {
-    /*display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    flex-direction: row;*/
+    flex-direction: row;
 
 }
 
