@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Ocorrência</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Tela principal -->
+    <div class="app">
+
+        <!-- Cabeçalho -->
+        <header>
+
+            <button class="voltar" onclick="voltar()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <h1>Registrar</h1>
+
+            <div class="perfil">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Perfil">
+            </div>
+
+        </header>
+
+
+        <!-- Conteúdo -->
+        <main>
+
+            <h2>Descreva o seu problema?</h2>
+
+            <!-- Descrição -->
+            <textarea
+                id="descricao"
+                placeholder="Digite aqui"></textarea>
+
+
+            <!-- Anexos -->
+            <div class="titulo-anexos">
+                <i class="fa-regular fa-camera"></i>
+                <strong>Anexos</strong>
+            </div>
+
+            <div class="anexo">
+
+                <input
+                    type="file"
+                    id="arquivo"
+                    accept="image/*"
+                    onchange="mostrarImagem(event)">
+
+                <label for="arquivo">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Adicionar</span>
+                </label>
+
+                <img id="preview" src="" alt="Prévia">
+
+            </div>
+
+
+            <!-- Botão -->
+            <button class="proximo" onclick="proximo()">
+                Próximo
+            </button>
+
+        </main>
+
+
+        <!-- Menu inferior -->
+        <nav class="menu">
+
+            <button onclick="menu('mapa')">
+                <i class="fa-regular fa-map"></i>
+                <span>Mapa</span>
+            </button>
+
+            <button class="ativo" onclick="menu('registrar')">
+                <i class="fa-solid fa-plus"></i>
+                <span>Registrar</span>
+            </button>
+
+            <button onclick="menu('inicio')">
+                <i class="fa-solid fa-house"></i>
+                <span>Início</span>
+            </button>
+
+            <button onclick="menu('historico')">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Histórico</span>
+            </button>
+
+            <button onclick="menu('comunidade')">
+                <i class="fa-solid fa-user-group"></i>
+                <span>Comunidade</span>
+            </button>
+
+        </nav>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

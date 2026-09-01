@@ -1,0 +1,319 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9d9d9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* Aplicativo */
+.app {
+    width: 375px;
+    min-height: 812px;
+
+    background-color: white;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Cabeçalho */
+header {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* Botão voltar */
+.voltar {
+    position: absolute;
+
+    left: 18px;
+    top: 40px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 32px;
+
+    color: #ff2028;
+
+    cursor: pointer;
+}
+
+
+/* Título */
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Foto do perfil */
+.perfil {
+    position: absolute;
+
+    right: 18px;
+    top: 38px;
+}
+
+
+.perfil img {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+/* Conteúdo */
+main {
+    padding: 0 18px 100px 18px;
+}
+
+
+/* Pergunta */
+h2 {
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Caixa de descrição */
+textarea {
+    width: 100%;
+    height: 284px;
+
+    resize: none;
+
+    border: none;
+
+    background-color: #d8d8d8;
+
+    padding: 12px;
+
+    font-size: 12px;
+
+    outline: none;
+
+    margin-bottom: 20px;
+}
+
+
+textarea::placeholder {
+    color: #333;
+}
+
+
+/* Título dos anexos */
+.titulo-anexos {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+
+    font-size: 12px;
+}
+
+
+.titulo-anexos i {
+    font-size: 20px;
+}
+
+
+/* Área do anexo */
+.anexo {
+    width: 96px;
+    height: 86px;
+
+    background-color: #d8d8d8;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+
+/* Input de arquivo */
+.anexo input {
+    display: none;
+}
+
+
+/* Botão adicionar */
+.anexo label {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    color: #555;
+
+    font-size: 11px;
+}
+
+
+.anexo label i {
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Imagem de prévia */
+#preview {
+    display: none;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    left: 0;
+    top: 0;
+}
+
+
+/* Botão próximo */
+.proximo {
+    width: 100%;
+
+    height: 35px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2185d0;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.proximo:hover {
+    background-color: #176fb4;
+}
+
+
+/* Menu inferior */
+.menu {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 65px;
+
+    background-color: #c8dcfa;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    border-radius: 12px 12px 0 0;
+}
+
+
+/* Botões do menu */
+.menu button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 3px;
+
+    color: #222;
+
+    font-size: 10px;
+}
+
+
+/* Ícones */
+.menu i {
+    font-size: 25px;
+}
+
+
+/* Registrar ativo */
+.menu .ativo {
+    color: #087dcc;
+}
+
+
+.menu .ativo i {
+    font-size: 32px;
+}
+
+
+/* Responsividade */
+@media (max-width: 400px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .app {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+}
